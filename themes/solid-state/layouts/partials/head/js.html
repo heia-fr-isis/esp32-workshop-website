@@ -1,7 +1,7 @@
-<script src="/js/jquery.min.js" defer></script>
-<script src="/js/jquery.scrollex.min.js" defer></script>
-<script src="/js/browser.min.js" defer></script>
-<script src="/js/breakpoints.min.js" defer></script>
+<script src="{{ relURL "js/jquery.min.js" }}" defer></script>
+<script src="{{ relURL "js/jquery.scrollex.min.js" }}" defer></script>
+<script src="{{ relURL "js/browser.min.js" }}" defer></script>
+<script src="{{ relURL "js/breakpoints.min.js" }}" defer></script>
 {{- with resources.Match "js/*.js" }}
 	{{- if eq hugo.Environment "development" }}
 		{{- with . | resources.Concat "js/bundle.js" | js.Build }}
