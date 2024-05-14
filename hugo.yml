@@ -1,7 +1,7 @@
 baseurl: "https://heia-fr-isis.github.io/esp32-workshop-website/"
 languageCode: "en-us"
 title: "ESP32 Workshop"
-canonifyurls: true
+canonifyurls: false
 theme: "solid-state"
 
 params:

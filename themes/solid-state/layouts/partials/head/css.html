@@ -1,23 +1,23 @@
-{{ $opts := dict "transpiler" "libsass" "targetPath" "/css/main.css" }}
+{{ $opts := dict "transpiler" "libsass" "targetPath" "css/main.css" }}
 {{- with resources.Get "sass/main.scss" | resources.ToCSS $opts }}
-{{- if eq hugo.Environment "development" }}
-<link rel="stylesheet" href="{{ .RelPermalink }}">
-{{- else }}
-{{- with . | minify | fingerprint }}
-<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-{{- end }}
-{{- end }}
+	{{- if eq hugo.Environment "development" }}
+		<link rel="stylesheet" href="{{ .RelPermalink }}">
+	{{- else }}
+		{{- with . | minify | fingerprint }}
+			<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+		{{- end }}
+	{{- end }}
 {{- end }}
 
 <noscript>
-	{{ $opts := dict "transpiler" "libsass" "targetPath" "/css/noscript.css" }}
+	{{ $opts := dict "transpiler" "libsass" "targetPath" "css/noscript.css" }}
 	{{- with resources.Get "sass/noscript.scss" | resources.ToCSS $opts }}
-	{{- if eq hugo.Environment "development" }}
-	<link rel="stylesheet" href="{{ .RelPermalink }}">
-	{{- else }}
-	{{- with . | minify | fingerprint }}
-	<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-	{{- end }}
-	{{- end }}
+		{{- if eq hugo.Environment "development" }}
+			<link rel="stylesheet" href="{{ .RelPermalink }}">
+		{{- else }}
+			{{- with . | minify | fingerprint }}
+				<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+			{{- end }}
+		{{- end }}
 	{{- end }}
 </noscript>
