@@ -1,0 +1,25 @@
+baseurl: "https://example.org/"
+languageCode: "en-us"
+title: "ESP32 Workshop"
+canonifyurls: true
+theme: "solid-state"
+
+params:
+  # Conference info
+  Name: "ESP32 Workshop"
+  Description: "October 21-22 2024, Haute école d'ingénierie et d'architecture, Fribourg"
+  Price: "1 day : CHF 450.- / 2 days: CHF 800.-" # If your event is free, just comment this line
+  Venue: "Haute école d'ingénierie et d'architecture"
+  Address: "Pérolles 80"
+  City: "Fribourg"
+  State: "Switzerland"
+  Images: ["/img/badge.jpg"]
+
+  # Active sections on the website to deactivate comment out with '#'
+  # you can also change order here and it will reflect on page
+
+  # List of Sponsors
+  Sponsors:
+    - name: "Hugo"
+      logo: "/img/hugo.png"
+      url: "http://gohugo.io"

@@ -1,0 +1,105 @@
+{{ define "main" }}
+
+<section id="banner">
+  <div class="inner">
+    <div class="logo"><img src="images/logo_heiafr_white.svg"></div>
+    <h2>{{ .Site.Title }}</h2>
+    <p>{{ .Site.Params.Description }}</p>
+    <p><a href="#" class="button primary">Register Online</a>
+    </p>
+  </div>
+</section>
+
+
+<section id="wrapper">
+
+  <!-- One -->
+  <section id="one" class="wrapper spotlight style1">
+    <div class="inner">
+      <span class="image"><img src="images/pic01.jpg" alt="" /></span>
+      <div class="content">
+        <h2 class="major">About</h2>
+        <p itemprop="description">Are you ready to dive into the exciting world of embedded systems? In this hands-on
+          workshop,
+          we'll explore the powerful ESP32 microcontroller and learn how to program it to perform various tasks. Whether
+          you're a beginner or an experienced developer, this workshop will provide you with the knowledge and skills
+          needed
+          to create your own custom applications using the ESP32.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Two -->
+  <section id="two" class="wrapper alt spotlight style2">
+    <div class="inner">
+      <span class="image"><img src="images/pic02.jpg" alt="" /></span>
+      <div class="content">
+        <h2 class="major">Day 1 / 21 October 2024 : Simple Programming with Arduino and Python</h2>
+        <p>The first day is for people with few or no experience in programming. We will start with the basics of
+          programming and learn how to use the Arduino IDE to program the ESP32. We will also explore the basics of
+          Python programming and learn how to use it to interact with the ESP32.</p>
+        <h3>Agenda:</h3>
+        <ul>
+          <li>Installation of development tools (Arduino, Thonny, Git)</li>
+          <li>Python programming (CircuitPython and MicroPython)</li>
+          <li>C/C++ programming (Arduino)</li>
+          <li>Standard interfaces (GPIO, I2C, SPI)</li>
+          <li>Best practices (use of Git, standard formatting, robust code, etc.)</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Three -->
+  <section id="three" class="wrapper spotlight style3">
+    <div class="inner">
+      <a href="#" class="image"><img src="images/pic03.png" alt="" /></a>
+      <div class="content">
+        <h2 class="major">Day 2 / 22 October 2024 : Advanced Programming with C++ and FreeRTOS</h2>
+        <p>The second day is for people with some experience in programming. We will dive deeper into the ESP32 and
+          learn how to program it using the ESP/IDF framework. We will also explore the use of the FreeRTOS kernel to
+          create more complex applications.
+        </p>
+        <h3>Agenda:</h3>
+        <ul>
+          <li>Installation of development tools (Visual Studio Code, Github, ESP/IDF)</li>
+          <li>Advanced programming in C/C++ (ESP/IDF)</li>
+          <li>Use of the FreeRTOS kernel</li>
+          <li>Communications (WiFi, LoRa)</li>
+          <li>Best practices (CI/CD, unit testing, static code analysis, etc.)</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Three -->
+  <section id="four" class="wrapper alt spotlight style4">
+    <div class="inner">
+      <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+      <div class="content">
+        <h2 class="major">Location and price</h2>
+        <p>The workshop will take place at the
+          <a href="https://www.heia-fr.ch/en/university/how-to-find-us/">HEIA-FR in Fribourg, Switzerland</a>.
+        </p>
+
+        <p>The price for the two-day workshop is CHF 450.- for one day and CHF 800.- for both days. The price includes
+          all materials and lunch. The workshop will be held in English, and participants are encouraged to bring their
+          own laptop.</p>
+
+        <p>The workshop is limited to 16 participants, so be sure to register early to secure your spot!
+        </p>
+
+        <a href="#" class="button primary fit">Register On line</a>
+
+      </div>
+    </div>
+  </section>
+
+
+
+</section>
+
+{{ end }}
