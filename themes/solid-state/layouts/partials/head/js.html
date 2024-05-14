@@ -3,14 +3,14 @@
 <script src="/js/browser.min.js" defer></script>
 <script src="/js/breakpoints.min.js" defer></script>
 {{- with resources.Match "js/*.js" }}
-	{{- if eq hugo.Environment "development" }}
-		{{- with . | resources.Concat "js/bundle.js" | js.Build }}
-			<script src="{{ .RelPermalink }}" defer></script>
-		{{- end }}
-	{{- else }}
-		{{- $opts := dict "minify" true }}
-		{{- with . | resources.Concat "js/bundle.js" | js.Build $opts | fingerprint }}
-			<script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous" defer></script>
-		{{- end }}
-	{{- end }}
+{{- if eq hugo.Environment "development" }}
+{{- with . | resources.Concat "/js/bundle.js" | js.Build }}
+<script src="{{ .RelPermalink }}" defer></script>
+{{- end }}
+{{- else }}
+{{- $opts := dict "minify" true }}
+{{- with . | resources.Concat "/js/bundle.js" | js.Build $opts | fingerprint }}
+<script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous" defer></script>
+{{- end }}
+{{- end }}
 {{- end }}
