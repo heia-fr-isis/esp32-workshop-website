@@ -1,4 +1,4 @@
-baseurl: "https://heia-fr-isis.github.io/esp32-workshop-website/"
+baseurl: "https://esp32-workshop-2024.isc.heia-fr.ch/"
 languageCode: "en-us"
 title: "ESP32 Workshop"
 canonifyurls: false
