@@ -64,10 +64,10 @@
 			opacity: 1;
 			font-family: _font(family-heading);
 			font-size: 1em;
-			font-weight: _font(weight-heading);
+			font-weight: 600;
 			letter-spacing: _font(kern-heading);
-			line-height: 2;
-			text-transform: uppercase;
+			// line-height: 2;
+			// text-transform: uppercase;
 		}
 
 		@include breakpoint('<=large') {
