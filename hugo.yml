@@ -7,6 +7,7 @@ theme: "solid-state"
 params:
   # Conference info
   Name: "ESP32 Workshop"
+  Registration: "https://docs.google.com/forms/d/e/1FAIpQLScoB2yWKYRDLWiHyr0OWbBl65fQsiqt9XKvVNfjv9h7B9Jpjg/viewform?usp=sf_link"
   Description: "October 21-22 2024, Haute école d'ingénierie et d'architecture, Fribourg"
   Price: "1 day : CHF 450.- / 2 days: CHF 800.-" # If your event is free, just comment this line
   Venue: "Haute école d'ingénierie et d'architecture"
